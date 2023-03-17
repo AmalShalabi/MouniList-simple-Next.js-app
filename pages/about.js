@@ -1,14 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+const About = () => {
   return (
     <div>
-      <h1>Homepage</h1>
+      <h1>About </h1>
       <p>
         Next.js is a React framework for building server-side rendered web
         applications. It provides developers with an efficient and flexible way
@@ -28,4 +21,6 @@ export default function Home() {
       </p>
     </div>
   );
-}
+};
+
+export default About;
