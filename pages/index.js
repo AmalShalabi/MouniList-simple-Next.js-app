@@ -12,7 +12,6 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <div>
-      <Navbar/>
       <h1>Homepage</h1>
       <p>
         Next.js is a React framework for building server-side rendered web
@@ -34,7 +33,6 @@ export default function Home() {
       <Link href="/mouni">
       See Mouni Listing
       </Link>
-      <Footer/>
     </div>
   );
 }
