@@ -4,6 +4,8 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Navbar from '@/comps/Navbar'
 import Footer from '@/comps/Footer'
+import Link from "next/link";
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,6 +31,9 @@ export default function Home() {
         also provides support for serverless deployment and API routes, which
         can make it easier to build and deploy complex web applications.
       </p>
+      <Link href="/mouni">
+      See Mouni Listing
+      </Link>
       <Footer/>
     </div>
   );
