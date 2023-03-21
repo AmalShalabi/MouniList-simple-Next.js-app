@@ -10,6 +10,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
+    <>
+    <Head>
+      <title>Mouni List | Home</title>
+      <meta name="keywords" content="mouni"/>
+    </Head>
     <div>
       <h1 className={styles.title}>Homepage</h1>
       <p className={styles.text}>
@@ -36,5 +41,7 @@ export default function Home() {
         See Mouni Listing
       </Link>
     </div>
+    </>
+    
   );
 }
