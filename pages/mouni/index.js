@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from '../../styles/Mouni.module.css'
+import Link from "next/link";
 export const getStaticProps=async()=>{
   const res=await fetch('https://jsonplaceholder.typicode.com/users')
   const data=await res.json()
@@ -18,12 +19,12 @@ const Mounies = ({mounies}) => {
       </Head>
       <div>
         <h1>All Mounies</h1>
-        {mounies.map(mouni=>(
-          <div key={mouni.id}>
-            <a className={styles.single}>
+        {mounies.map((mouni) => (
+          <Link href={'/mouni/' + mouni.id} key={mouni.id} className={styles.single}>
+            
               <h3>{mouni.name}</h3>
-            </a>
-          </div>
+        
+          </Link>
         ))}
       </div>
     </>
